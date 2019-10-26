@@ -5,8 +5,5 @@
 </template>
 
 <style>
-#id {
-  position: absolute;
-  height: 100%;
-}
+
 </style>

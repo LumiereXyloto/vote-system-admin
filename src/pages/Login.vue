@@ -20,11 +20,13 @@
       </div>
     </div>
     </transition>
+    <auth-footer font-color="#fff" />
   </div>
 </template>
 
 <script>
 import CquptHeader from '../components/Header'
+import AuthFooter from '../components/Footer'
 export default {
   data: () => ({
     showTitle: false,
@@ -32,7 +34,8 @@ export default {
     password: ''
   }),
   components: {
-    CquptHeader
+    CquptHeader,
+    AuthFooter
   },
   mounted () {
     this.timer = setTimeout(() => {
@@ -64,7 +67,7 @@ export default {
 }
 .title {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 180px;
   font-size: 32px;
   margin-bottom: 16px;
   letter-spacing: 31px;
