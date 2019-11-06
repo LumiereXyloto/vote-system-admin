@@ -37,12 +37,12 @@ export default {
   data: () => ({
     navList: [
       {
-        submenu: '导航一',
+        submenu: '投票活动',
         subIndex: '1',
         icon: 'el-icon-date',
         items: [
-          { title: '测试1', path: '/test1', itemIndex: '1-1' },
-          { title: '测试2', path: '/test2', itemIndex: '1-2' }
+          { title: '活动管理', path: '/activity', itemIndex: '1-1' },
+          { title: '测试', path: '/test', itemIndex: '1-2' }
         ]
       }
     ],

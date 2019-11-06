@@ -10,14 +10,14 @@ const routes = [
     component: () => import('../pages/Layout'),
     children: [
       {
-        path: '/test1',
-        name: '测试1',
-        component: () => import('../pages/Page1')
+        path: '/activity',
+        name: '活动管理',
+        component: () => import('../pages/Activity')
       },
       {
-        path: '/test2',
-        name: '测试2',
-        component: () => import('../pages/Page2')
+        path: '/test',
+        name: '测试',
+        component: () => import('../pages/Test')
       }
     ]
   },

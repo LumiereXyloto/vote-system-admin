@@ -14,7 +14,7 @@
             <el-input v-model="password"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button>登录</el-button>
+            <el-button @click="handleLogin">登录</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -44,6 +44,11 @@ export default {
   },
   destroyed () {
     clearTimeout(this.timer)
+  },
+  methods: {
+    handleLogin () {
+      this.$router.push('/')
+    }
   }
 }
 </script>
@@ -88,6 +93,11 @@ export default {
 }
 .el-row {
   margin-bottom: 20px;
+}
+.el-button {
+  width: 140px;
+  font-weight: bold;
+  letter-spacing: 4px;
 }
 span {
   display: block;
